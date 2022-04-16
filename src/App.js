@@ -1,9 +1,9 @@
-import './App.css';
+import Footer from "./component/Shared/Footer";
 
 function App() {
   return (
     <div>
-      <h1 className='text-7xl text-center'>Hello................ SADDAM VAI</h1>
+      <Footer/>
     </div>
   );
 }
