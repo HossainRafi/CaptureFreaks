@@ -3,13 +3,13 @@ import { NavLink } from "react-router-dom";
 
 const Header = () => {
   return (
-    <div className="flex flex-row justify-between items-center bg-slate-300 h-[4rem] sticky top-0 z-50 px-10">
-      <div>
-        <h2 className="font-serif text-4xl font-bold italic text-blue-500">
+    <div className="flex flex-row justify-between items-center bg-slate-300 h-[3.8rem] sticky top-0 z-50 px-10">
+        <div className="flex flex-row justify-center items-center text-blue-500">
           <i className="las la-camera-retro text-5xl font-extrabold"></i>
-          <span>Capture Freaks</span>
-        </h2>
-      </div>
+          <h2 className="font-serif  text-4xl font-bold italic">
+            Capture Freaks
+          </h2>
+        </div>
       <div className="text-xl font-bold font-mono flex gap-7">
         <NavLink
           to="/"
@@ -20,7 +20,7 @@ const Header = () => {
           Home
         </NavLink>
         <NavLink
-          to="/reviews"
+          to="/about"
           className={({ isActive }) =>
             isActive ? "text-blue-600" : "text-slate-600 hover:text-blue-600"
           }
@@ -28,7 +28,7 @@ const Header = () => {
           About
         </NavLink>
         <NavLink
-          to="/dashBoard"
+          to="/blogs"
           className={({ isActive }) =>
             isActive ? "text-blue-600" : "text-slate-600 hover:text-blue-600"
           }
@@ -36,7 +36,7 @@ const Header = () => {
           Blogs
         </NavLink>
         <NavLink
-          to="/blogs"
+          to="/login"
           className={({ isActive }) =>
             isActive ? "text-blue-600" : "text-slate-600 hover:text-blue-600"
           }
