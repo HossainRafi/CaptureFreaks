@@ -1,0 +1,32 @@
+[
+    {
+        "id":1,
+        "name":"Basic Package",
+        "price":"$250",
+        "descOne":"Ceremony Coverage Only",
+        "descTwo":"Up to 2.5 Hours",
+        "descThree":"50 Digital Images With Edit",
+        "descFour":"File Provided Direct To You Via Online Or USB Drive",
+        "img":"https://i.ibb.co/X7pk8rJ/Wedding1.jpg"
+    },
+    {
+        "id":2,
+        "name":"Premium Package",
+        "price":"$550",
+        "descOne":"Ceremony Coverage + Pre-Wedding Coverage",
+        "descTwo":"Up to 4.5 Hours",
+        "descThree":"150 Digital Images With Edit",
+        "descFour":"File Provided Direct To You Via Online Or USB Drive",
+        "img":"https://i.ibb.co/h2R0Cnw/wedding2.jpg"
+    },
+    {
+        "id":3,
+        "name":"Deluxe Package",
+        "price":"$950",
+        "descOne":"Full Wedding Coverage",
+        "descTwo":"Up to 9.5 Hours",
+        "descThree":"350 Digital Images With Edit",
+        "descFour":"File Provided Direct To You Via Online Or USB Drive",
+        "img":"https://i.ibb.co/wY1YbnS/wedding3.jpg"
+    }
+]
