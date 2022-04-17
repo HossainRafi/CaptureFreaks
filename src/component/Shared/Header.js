@@ -3,14 +3,14 @@ import { NavLink } from "react-router-dom";
 
 const Header = () => {
   return (
-    <div className="flex flex-row justify-between items-center bg-slate-300 h-[3.8rem] sticky top-0 z-50 px-10">
-        <div className="flex flex-row justify-center items-center text-blue-500">
-          <i className="las la-camera-retro text-5xl font-extrabold"></i>
-          <h2 className="font-serif  text-4xl font-bold italic">
-            Capture Freaks
-          </h2>
-        </div>
-      <div className="text-xl font-bold font-mono flex gap-7">
+    <div className="md:flex flex-row justify-between items-center bg-slate-300 md:h-[3.8rem] sticky top-0 z-50 px-10">
+      <div className="flex flex-row justify-center items-center text-blue-500">
+        <i className="las la-camera-retro text-5xl font-extrabold"></i>
+        <h2 className="font-serif  text-3xl font-bold italic">
+          Capture Freaks
+        </h2>
+      </div>
+      <div className="text-xl font-bold font-mono flex justify-center items-center gap-5">
         <NavLink
           to="/"
           className={({ isActive }) =>
@@ -43,8 +43,6 @@ const Header = () => {
         >
           LogIn
         </NavLink>
-
-        
       </div>
     </div>
   );
