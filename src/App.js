@@ -7,6 +7,7 @@ import About from "./component/About/About";
 import Blogs from "./component/Blogs/Blogs";
 import Login from "./component/Login/Login";
 import Signup from "./component/Signup/Signup";
+import Checkout from "./component/Checkout/Checkout";
 
 function App() {
   return (
@@ -17,6 +18,9 @@ function App() {
         <Route path="/about" element={<About />} />
         <Route path="/blogs" element={<Blogs />} />
         <Route path="/login" element={<Login />} />
+
+        <Route path="/checkout" element={<Checkout/>}/>
+
         <Route path="/signup" element={<Signup/>} />
         <Route path="*" element={<Error />} />
       </Routes>

@@ -13,7 +13,10 @@ const Home = () => {
     <div>
       <div className="py-7">
         <Carousel />
-      </div>
+          </div>
+              <h1 className="text-center font-serif text-blue-600 text-6xl pt-10">
+                  Packages For You
+              </h1>
       <div className="pt-10 grid grid-cols-3 gap-5 py-10">
         {packages.map((packages) => (
           <Packages key={packages.id} packages={packages} />
