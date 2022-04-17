@@ -17,7 +17,7 @@ const Home = () => {
               <h1 className="text-center font-serif text-blue-600 text-6xl pt-10">
                   Packages For You
               </h1>
-      <div className="pt-10 grid grid-cols-3 gap-5 py-10">
+      <div className="grid md:grid-cols-3 gap-5 pt-10 py-10">
         {packages.map((packages) => (
           <Packages key={packages.id} packages={packages} />
         ))}

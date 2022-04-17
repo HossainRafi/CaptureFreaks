@@ -9,15 +9,12 @@ const Packages = ({ packages }) => {
   return (
     <div>
       <div className="card-container mx-5 mb-10 bg-gray-200 rounded-xl h-[600px] relative">
-        <img className="rounded-t-xl mt-3 h-[200px]" src={img} alt="" />
+        <img className="rounded-t-xl mt-3 h-[200px] w-full" src={img} alt="" />
         <h3 className="text-2xl font-serif italic text-center text-blue-500 font-bold pt-3 pb-8">
           {name}
         </h3>
 
-        <div className="px-5 py-2 text-lg">
-          {/* <h2 className="text-2xl text-blue-700 font-bold text-center mt-5 mb-3">
-            Package Offerings
-          </h2> */}
+        <div className="px-5 py-2 text-lg pb-20">
           <p className="text-xl mb-2">
             <i class="text-xl text-blue-600 font-bold las la-hand-point-right"></i>{" "}
             {descOne}
@@ -38,7 +35,7 @@ const Packages = ({ packages }) => {
             <i class="text-xl text-blue-600 font-bold las la-hand-point-right"></i>{" "}
             {descFive}
           </p>
-          <h2 className="text-2xl text-blue-700 font-bold text-center absolute bottom-24">
+          <h2 className="text-2xl text-blue-700 font-bold text-center">
             Price: {price}
           </h2>
         </div>
