@@ -17,11 +17,10 @@ function App() {
         <Route path="/about" element={<About />} />
         <Route path="/blogs" element={<Blogs />} />
         <Route path="/login" element={<Login />} />
-
         <Route path="/signup" element={<Signup/>} />
         <Route path="*" element={<Error />} />
       </Routes>
-      {/* <Footer/> */}
+      <Footer/>
     </div>
   );
 }
