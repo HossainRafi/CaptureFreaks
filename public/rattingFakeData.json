@@ -3,21 +3,21 @@
     "id": 1,
     "name": "Steve Smith",
     "ratting": 4.5,
-    "comment": "This guy is very skilled and professional person.His photography skills and editing skill is amazing.He is very friendly person also.I'm fully satisfied with his packages and",
+    "comment": "This guy is very skilled and professional person.His photography skills and editing skill is amazing.He is very friendly person also.I'm fully satisfied with his packages",
     "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSIW7tRx0e0sPH-b45hi6Ek_vfuafVtw7pMVw&usqp=CAU"
   },
   {
     "id": 2,
     "name": "Ross Taylor",
     "ratting": 4.8,
-    "comment": "This guy is very skilled and professional person.His photography skills and editing skill is amazing.He is very friendly person also.I'm fully satisfied with his packages and",
+    "comment": "This guy is very skilled and professional person.His photography skills and editing skill is amazing.He is very friendly person also.I'm fully satisfied with his packages",
     "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSuRHr0abZScE4ASZVaitIPiBy9bm1lmH2EzA&usqp=CAU"
   },
   {
     "id": 3,
     "name": "Ben Stokes",
     "ratting": 5,
-    "comment": "This guy is very skilled and professional person.His photography skills and editing skill is amazing.He is very friendly person also.I'm fully satisfied with his packages and",
+    "comment": "This guy is very skilled and professional person.His photography skills and editing skill is amazing.He is very friendly person also.I'm fully satisfied with his packages",
     "img": "https://static.independent.co.uk/2021/07/30/17/PRI192248637.jpg?width=982&height=726&auto=webp&quality=75"
   }
 ]

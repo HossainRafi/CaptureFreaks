@@ -1,4 +1,6 @@
 import React from "react";
+import { AiFillStar, AiOutlineStar } from "react-icons/ai";
+import Rating from "react-rating";
 
 const Review = ({ review }) => {
   const { name, img, ratting, comment } = review;
@@ -16,7 +18,16 @@ const Review = ({ review }) => {
         </h3>
         <div className="px-5 py-2 text-lg pb-20">
           <p className="text-xl text-center my-2">{comment}</p>
-          <h2>Ratting:{ratting}</h2>
+          <div className="flex justify-center">
+            <h2 className="text-xl font-bold text-orange-400">Ratting:</h2>
+            <Rating
+              className="pt-1 ml-3"
+              readonly
+              initialRating={ratting}
+              emptySymbol={<AiOutlineStar color="orange" size={"20px"} />}
+              fullSymbol={<AiFillStar color="orange" size={"20px"} />}
+            />
+          </div>
         </div>
       </div>
     </div>
