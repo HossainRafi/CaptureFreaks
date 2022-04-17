@@ -16,23 +16,23 @@ const Packages = ({ packages }) => {
 
         <div className="px-5 py-2 text-lg pb-20">
           <p className="text-xl mb-2">
-            <i class="text-xl text-blue-600 font-bold las la-hand-point-right"></i>{" "}
+            <i className="text-xl text-blue-600 font-bold las la-hand-point-right"></i>{" "}
             {descOne}
           </p>
           <p className="text-xl mb-2">
-            <i class="text-xl text-blue-600 font-bold las la-hand-point-right"></i>{" "}
+            <i className="text-xl text-blue-600 font-bold las la-hand-point-right"></i>{" "}
             {descTwo}
           </p>
           <p className="text-xl mb-2">
-            <i class="text-xl text-blue-600 font-bold las la-hand-point-right"></i>{" "}
+            <i className="text-xl text-blue-600 font-bold las la-hand-point-right"></i>{" "}
             {descThree}
           </p>
           <p className="text-xl mb-2">
-            <i class="text-xl text-blue-600 font-bold las la-hand-point-right"></i>{" "}
+            <i className="text-xl text-blue-600 font-bold las la-hand-point-right"></i>{" "}
             {descFour}
           </p>
           <p className="text-xl mb-2">
-            <i class="text-xl text-blue-600 font-bold las la-hand-point-right"></i>{" "}
+            <i className="text-xl text-blue-600 font-bold las la-hand-point-right"></i>{" "}
             {descFive}
           </p>
           <h2 className="text-2xl text-blue-700 font-bold text-center">
