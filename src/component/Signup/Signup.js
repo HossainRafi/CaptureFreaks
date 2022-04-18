@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import "../Login/login.css";
 import auth from "./../../Firebase/firebase.init";
-import { useCreateUserWithEmailAndPassword } from "react-firebase-hooks/auth";
+import { useCreateUserWithEmailAndPassword, useSignInWithGoogle } from "react-firebase-hooks/auth";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
@@ -22,6 +22,9 @@ const Signup = () => {
 
   const [createUserWithEmailAndPassword, user, loading, hookError] =
     useCreateUserWithEmailAndPassword(auth, { sendEmailVerification: true });
+  
+  const [signInWithGoogle, googleUser, googleLoading, googleError] =
+    useSignInWithGoogle(auth);
 
   const handleEmailChange = (e) => {
     const emailRegex = /\S+@\S+\.\S+/;
@@ -89,9 +92,13 @@ const Signup = () => {
     }
   }, [user]);
 
+  const handleGoogleLogin = () => {
+    signInWithGoogle();
+  };
+
   return (
     <div className="login-container">
-      <div className="login-title">Sign Up</div>
+      <div className="login-title">Sign Up First</div>
       <form className="login-form" onSubmit={handleLogin}>
         <input
           type="text"
@@ -99,24 +106,22 @@ const Signup = () => {
           onChange={handleEmailChange}
         />
         {errors?.email && <p className="error-message">{errors.email}</p>}
-          <input
-            type={showPass ? "text" : "password"}
-            placeholder="password"
-            onChange={handlePasswordChange}
-          />
-          {errors?.password && (
-            <p className="error-message">{errors.password}</p>
-          )}
+        <input
+          type={showPass ? "text" : "password"}
+          placeholder="password"
+          onChange={handlePasswordChange}
+        />
+        {errors?.password && <p className="error-message">{errors.password}</p>}
 
-          <input
-            type="password"
-            placeholder="confirm password"
-            onChange={handleConfirmPasswordChange}
-          />
+        <input
+          type="password"
+          placeholder="confirm password"
+          onChange={handleConfirmPasswordChange}
+        />
 
         <button>Sign Up</button>
       </form>
-      <button>Sign Up with Google</button>
+      <button onClick={handleGoogleLogin}>Sign Up with Google</button>
       <div>
         <p className="font-medium text-lg text-center text-white mt-4">
           Don't have an account ?

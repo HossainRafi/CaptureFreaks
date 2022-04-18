@@ -58,20 +58,14 @@ const Login = () => {
     if (error) {
       switch (error?.code) {
         case "auth/invalid-email":
-          toast("OOPS..!! Something Went Wrong. Try Again Later", {
-            id: "popup",
-          });
+          toast("OOPS..!! Something Went Wrong. Try Again Later");
           break;
 
         case "auth/invalid-password":
-          toast("OOPS..!! Something Went Wrong. Try Again Later", {
-            id: "popup",
-          });
+          toast("OOPS..!! Something Went Wrong. Try Again Later");
           break;
         default:
-          toast("OOPS..!! Something Went Wrong. Try Again Later", {
-            id: "popup",
-          });
+          toast("OOPS..!! Something Went Wrong. Try Again Later");
       }
     }
   }, [hookError, googleError]);
