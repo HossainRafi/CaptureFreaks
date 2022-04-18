@@ -90,12 +90,14 @@ const Login = () => {
             onChange={handleEmailChange}
             type="text"
             placeholder="Enter Your Email"
+            required
           />
           {errors?.email && <p className="error-message">{errors.email}</p>}
           <input
             onChange={handlePasswordChange}
             type="password"
             placeholder="Enter Your Password"
+            required
           />
           {errors?.password && (
             <p className="error-message">{errors.password}</p>

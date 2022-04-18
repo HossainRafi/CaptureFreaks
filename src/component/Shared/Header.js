@@ -6,7 +6,6 @@ import auth from "../../Firebase/firebase.init";
 
 const Header = () => {
   const [user] = useAuthState(auth);
-  console.log(user);
   return (
     <div className="md:flex flex-row justify-between items-center bg-slate-300 md:h-[3.8rem] sticky top-0 z-50 px-10">
       <div className="flex flex-row justify-center items-center text-blue-500">

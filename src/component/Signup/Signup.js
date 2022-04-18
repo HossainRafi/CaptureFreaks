@@ -105,12 +105,14 @@ const Signup = () => {
             type="text"
             placeholder="Your Email"
             onChange={handleEmailChange}
+            required
           />
           {errors?.email && <p className="error-message">{errors.email}</p>}
           <input
             type={showPass ? "text" : "password"}
             placeholder="password"
             onChange={handlePasswordChange}
+            required
           />
           {errors?.password && (
             <p className="error-message">{errors.password}</p>
@@ -120,6 +122,7 @@ const Signup = () => {
             type="password"
             placeholder="confirm password"
             onChange={handleConfirmPasswordChange}
+            required
           />
 
           <button>Sign Up</button>
