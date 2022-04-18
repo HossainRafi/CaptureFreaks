@@ -6,7 +6,7 @@ const Review = ({ review }) => {
   const { name, img, ratting, comment } = review;
   return (
     <div>
-      <div className="card-container mx-5 mb-10 bg-gray-200 rounded-xl h-[430px] pt-5">
+      <div className="card-container mx-5 mb-10 bg-gray-300 rounded-xl h-[430px] pt-5">
         <img
           className="h-[80px] w-[80px] mx-auto rounded-full"
           src={img}

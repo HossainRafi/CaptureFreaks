@@ -11,7 +11,7 @@ const Home = () => {
       .then((data) => setPackages(data));
   }, []);
   return (
-    <div>
+    <div className="bg-gray-200">
       <div className="pb-7">
         <Carousel />
       </div>
@@ -22,8 +22,8 @@ const Home = () => {
         {packages.map((packages) => (
           <Packages key={packages.id} packages={packages} />
         ))}
-          </div>
-          <Reviews/>
+      </div>
+      <Reviews />
     </div>
   );
 };

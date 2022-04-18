@@ -97,51 +97,55 @@ const Signup = () => {
   };
 
   return (
-    <div className="login-container">
-      <div className="login-title">Sign Up First</div>
-      <form className="login-form" onSubmit={handleLogin}>
-        <input
-          type="text"
-          placeholder="Your Email"
-          onChange={handleEmailChange}
-        />
-        {errors?.email && <p className="error-message">{errors.email}</p>}
-        <input
-          type={showPass ? "text" : "password"}
-          placeholder="password"
-          onChange={handlePasswordChange}
-        />
-        {errors?.password && <p className="error-message">{errors.password}</p>}
+    <div className="bg-gray-200 py-10">
+      <div className="login-container">
+        <div className="login-title">Sign Up First</div>
+        <form className="login-form" onSubmit={handleLogin}>
+          <input
+            type="text"
+            placeholder="Your Email"
+            onChange={handleEmailChange}
+          />
+          {errors?.email && <p className="error-message">{errors.email}</p>}
+          <input
+            type={showPass ? "text" : "password"}
+            placeholder="password"
+            onChange={handlePasswordChange}
+          />
+          {errors?.password && (
+            <p className="error-message">{errors.password}</p>
+          )}
 
-        <input
-          type="password"
-          placeholder="confirm password"
-          onChange={handleConfirmPasswordChange}
-        />
+          <input
+            type="password"
+            placeholder="confirm password"
+            onChange={handleConfirmPasswordChange}
+          />
 
-        <button>Sign Up</button>
-      </form>
-      <button onClick={handleGoogleLogin}>Sign Up with Google</button>
-      <div>
-        <p className="font-medium text-lg text-center text-white mt-4">
-          Don't have an account ?
-        </p>
-        <p className="font-bold text-xl text-center text-blue-900">
-          <Link to="/login">Log In</Link>
-        </p>
+          <button>Sign Up</button>
+        </form>
+        <button onClick={handleGoogleLogin}>Sign Up with Google</button>
+        <div>
+          <p className="font-medium text-lg text-center text-white mt-4">
+            Don't have an account ?
+          </p>
+          <p className="font-bold text-xl text-center text-blue-900">
+            <Link to="/login">Log In</Link>
+          </p>
+        </div>
+
+        <ToastContainer
+          position="top-center"
+          autoClose={2500}
+          hideProgressBar
+          newestOnTop={false}
+          closeOnClick
+          rtl={false}
+          pauseOnFocusLoss
+          draggable
+          pauseOnHover
+        />
       </div>
-
-      <ToastContainer
-        position="top-center"
-        autoClose={2500}
-        hideProgressBar
-        newestOnTop={false}
-        closeOnClick
-        rtl={false}
-        pauseOnFocusLoss
-        draggable
-        pauseOnHover
-      />
     </div>
   );
 };

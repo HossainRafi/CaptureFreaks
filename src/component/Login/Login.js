@@ -73,7 +73,7 @@ const Login = () => {
     signInWithGoogle();
   };
   return (
-    <div>
+    <div className="bg-gray-200 py-10">
       <div className="login-container">
         <div className="login-title">Log In First</div>
         <form onSubmit={handleLogin} className="login-form">
@@ -91,8 +91,6 @@ const Login = () => {
           {errors?.password && (
             <p className="error-message">{errors.password}</p>
           )}
-
-          {/* {hookError && <p className="error-message">{hookError?.message}</p>} */}
 
           <button>Log In</button>
         </form>
