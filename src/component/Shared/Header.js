@@ -42,7 +42,7 @@ const Header = () => {
         </NavLink>
 
 
-        {user?.uid ? <button onClick={()=>signOut(auth)}>Sign Out</button> : <NavLink
+        {user?.uid ? <button onClick={()=>signOut(auth)}>Log Out</button> : <NavLink
           to="/login"
           className={({ isActive }) =>
             isActive ? "text-blue-600" : "text-slate-600 hover:text-blue-600"

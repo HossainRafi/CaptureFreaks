@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import "./login.css";
 import auth from "./../../Firebase/firebase.init";
 import {
@@ -12,11 +12,13 @@ import "react-toastify/dist/ReactToastify.css";
 
 const Login = () => {
   const [userInfo, setUserInfo] = useState({ email: "", password: "" });
-
+  const navigate = useNavigate();
+  const location = useLocation();
+  const from = location?.state?.from?.pathname || "/";
   const [errors, setErrors] = useState({ email: "", password: "", others: "" });
 
   const [signInWithEmail, user, loading, hookError] =
-    useSignInWithEmailAndPassword(auth);
+    useSignInWithEmailAndPassword(auth, { sendEmailVerification: true });
   const [signInWithGoogle, googleUser, googleLoading, googleError] =
     useSignInWithGoogle(auth);
 
@@ -48,7 +50,9 @@ const Login = () => {
     e.preventDefault();
     signInWithEmail(userInfo.email, userInfo.password);
   };
-
+  if (user) {
+    navigate(from, { replace: true });
+  }
   useEffect(() => {
     const error = hookError || googleError;
     if (error) {
@@ -71,7 +75,9 @@ const Login = () => {
       }
     }
   }, [hookError, googleError]);
-
+  const handleGoogleLogin = () => {
+    signInWithGoogle();
+  };
   return (
     <div>
       <div className="login-container">
@@ -96,7 +102,7 @@ const Login = () => {
 
           <button>Log In</button>
         </form>
-        <button onClick={() => signInWithGoogle}>Log In with Google</button>
+        <button onClick={handleGoogleLogin}>Log In with Google</button>
 
         <div>
           <p className="font-medium text-lg text-center text-white mt-4">
