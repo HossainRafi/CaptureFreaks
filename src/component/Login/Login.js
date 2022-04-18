@@ -2,7 +2,11 @@ import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import "./login.css";
 import auth from "./../../Firebase/firebase.init";
-import { useAuthState, useSignInWithEmailAndPassword, useSignInWithGoogle } from "react-firebase-hooks/auth";
+import {
+  useAuthState,
+  useSignInWithEmailAndPassword,
+  useSignInWithGoogle,
+} from "react-firebase-hooks/auth";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
@@ -46,18 +50,24 @@ const Login = () => {
   };
 
   useEffect(() => {
-    const error= hookError||googleError
+    const error = hookError || googleError;
     if (error) {
       switch (error?.code) {
         case "auth/invalid-email":
-          toast("OOPS..!! Something Went Wrong. Try Again Later");
+          toast("OOPS..!! Something Went Wrong. Try Again Later", {
+            id: "popup",
+          });
           break;
 
         case "auth/invalid-password":
-          toast("OOPS..!! Something Went Wrong. Try Again Later");
+          toast("OOPS..!! Something Went Wrong. Try Again Later", {
+            id: "popup",
+          });
           break;
         default:
-          toast("OOPS..!! Something Went Wrong. Try Again Later");
+          toast("OOPS..!! Something Went Wrong. Try Again Later", {
+            id: "popup",
+          });
       }
     }
   }, [hookError, googleError]);
