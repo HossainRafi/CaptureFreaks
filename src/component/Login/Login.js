@@ -54,7 +54,7 @@ const Login = () => {
     e.preventDefault();
     signInWithEmail(userInfo.email, userInfo.password);
   };
-  if (user) {
+  if (user || googleUser) {
     navigate(from, { replace: true });
   }
   useEffect(() => {
