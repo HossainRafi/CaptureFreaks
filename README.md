@@ -1,4 +1,4 @@
-### Capture Freaks Photography
+# Capture Freaks Photography
 
 ## https://assignment-10-8d187.web.app/
 
