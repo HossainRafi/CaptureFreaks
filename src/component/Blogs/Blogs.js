@@ -29,7 +29,37 @@ const Blogs = () => {
           Firebases হলো Google-backend application development software যেটা
           developer দের android app, web app ইত্যাদি তৈরি করতে পারে। আমি আমার
           website কে hosting করার জন্য, Authentication service add করার জন্য
-          Firebase use করি।
+          Firebase use করি। Firebases এর কিছু Alternative হল:
+          <p className="py-2">
+            <i className="las la-hand-point-right"></i> Parse
+          </p>
+          <p className="py-2">
+            <i className="las la-hand-point-right"></i> Back4App
+          </p>
+          <p className="py-2">
+            <i className="las la-hand-point-right"></i> AWS Amplify
+          </p>
+          <p className="py-2">
+            <i className="las la-hand-point-right"></i> Kuzzle
+          </p>
+          <p className="py-2">
+            <i className="las la-hand-point-right"></i> Couchbase
+          </p>
+          <p className="py-2">
+            <i className="las la-hand-point-right"></i> NativeScript
+          </p>
+          <p className="py-2">
+            <i className="las la-hand-point-right"></i> RxDB
+          </p>
+          <p className="py-2">
+            <i className="las la-hand-point-right"></i> Flutter
+          </p>
+          <p className="py-2">
+            <i className="las la-hand-point-right"></i> LoopBack
+          </p>
+          <p className="py-2">
+            <i className="las la-hand-point-right"></i> SashiDo
+          </p>
         </div>
       </div>
       <div className="bg-gray-300  p-5 rounded-2xl">
@@ -38,7 +68,7 @@ const Blogs = () => {
         </h1>
         <div className="text-xl text-justify leading-relaxed">
           Firebase হলো একটি backend development software application. Firebase
-          এর user কে অনেকগুলো service provide করে।যেমন:
+          এর user কে অনেকগুলো service provide করে। যেমন:
           <p className="py-2">
             <i className="las la-hand-point-right"></i> Cloud Firestore
           </p>
