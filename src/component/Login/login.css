@@ -6,8 +6,8 @@
     border-radius: 15px;
     padding: 20px 40px;
     box-sizing: border-box;
-    background: #6589a5;
-    box-shadow: 10px 10px 15px #aeaeae, -14px -14px 20px #ffffff;
+    background: #b5b8bb;
+    /* box-shadow: 10px 10px 15px #aeaeae, -14px -14px 20px #ffffff; */
 }
 
 
@@ -15,9 +15,9 @@
     text-align: center;
     margin-top: 0px;
     font-weight: 900;
-    border-bottom: 5px solid #63d0ff;
+    border-bottom: 5px solid #0c2162;
     font-size: 2.5rem;
-    color: #63d0ff;
+    color: #0c2162;
     letter-spacing: 1px;
 }
 
@@ -56,13 +56,13 @@
     height: 40px;
     font-size: 18px;
     border-radius: 50px;
-    box-shadow: inset 6px 6px 6px #cbced1, inset -6px -6px 6px white;
+    /* box-shadow: inset 6px 6px 6px #cbced1, inset -6px -6px 6px white; */
 }
 
 .login-container button {
     color: #0c2162;
     margin-top: 25px;
-    background: #b9d1dc;
+    background: #74acf6;
     font-size: 20px;
     height: 40px;
     border-radius: 20px;
@@ -72,14 +72,15 @@
 }
 
 .login-container button:hover {
-    background: #76b9f0;
+    background: #4b85b0;
 }
 
 .error-message{
-    font-size: 12px;
-    color: red;
+    font-size: 18px;
+    color: #d50000;
     margin: 12px;
 }
 .error-message::before{
     content: "❌ ";
+    font-size: 15px;
 }

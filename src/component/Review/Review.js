@@ -4,7 +4,6 @@ import Rating from "react-rating";
 
 const Review = ({ review }) => {
   const { name, img, ratting, comment } = review;
-  console.log(review);
   return (
     <div>
       <div className="card-container mx-5 mb-10 bg-gray-200 rounded-xl h-[430px] pt-5">

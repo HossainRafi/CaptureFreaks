@@ -8,8 +8,8 @@ const Packages = ({ packages }) => {
     packages;
   return (
     <div>
-      <div className="card-container mx-5 mb-10 bg-gray-200 rounded-xl h-[600px] relative">
-        <img className="rounded-t-xl mt-3 h-[200px] w-full" src={img} alt="" />
+      <div className="card-container mx-5 mb-10 bg-gray-200 rounded-xl h-[680px] relative">
+        <img className="rounded-t-xl mt-3 h-[280px] w-full" src={img} alt="" />
         <h3 className="text-2xl font-serif italic text-center text-blue-500 font-bold pt-3 pb-8">
           {name}
         </h3>

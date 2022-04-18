@@ -1,35 +1,35 @@
 [
-    {
-        "id":1,
-        "name":"Basic Package",
-        "price":"$250",
-        "descOne":"Ceremony Coverage",
-        "descTwo":"Up to 2.5 Hours",
-        "descThree":"75 Images With Edit",
-        "descFour":"Quality Edited Photos",
-        "descFive":"File Provided Via USB",
-        "img":"https://i.ibb.co/h2R0Cnw/wedding2.jpg"
-    },
-    {
-      "id": 2,
-      "name": "Premium Package",
-      "price": "$550",
-      "descOne": "Ceremony Coverage",
-      "descTwo":" Pre-Wedding Coverage",
-      "descThree": "Up to 4.5 Hours",
-      "descFour": "150 Images With Edit",
-      "descFive": "File Provided Via USB",
-      "img": "https://i.ibb.co/44YdxkH/slider1.webp"
-    },
-    {
-        "id":3,
-        "name":"Deluxe Package",
-        "price":"$950",
-        "descOne":"Full Wedding Coverage",
-        "descTwo":"Up to 9.5 Hours",
-        "descThree":"350 Images With Edit",
-        "descFour":"File Provided USB",
-        "descFive":" Free Extra Offerings",
-        "img":"https://i.ibb.co/wY1YbnS/wedding3.jpg"
-    }
+  {
+    "id": 1,
+    "name": "Basic Package",
+    "price": "$250",
+    "descOne": "Ceremony Coverage",
+    "descTwo": "Up to 2.5 Hours",
+    "descThree": "75 Images With Edit",
+    "descFour": "Quality Edited Photos",
+    "descFive": "File Provided Via USB",
+    "img": "https://i.ibb.co/44YdxkH/slider1.webp"
+  },
+  {
+    "id": 2,
+    "name": "Premium Package",
+    "price": "$550",
+    "descOne": "Ceremony Coverage",
+    "descTwo": " Pre-Wedding Coverage",
+    "descThree": "Up to 4.5 Hours",
+    "descFour": "150 Images With Edit",
+    "descFive": "File Provided Via USB",
+    "img": "https://i.ibb.co/h2R0Cnw/wedding2.jpg"
+  },
+  {
+    "id": 3,
+    "name": "Deluxe Package",
+    "price": "$950",
+    "descOne": "Full Wedding Coverage",
+    "descTwo": "Up to 9.5 Hours",
+    "descThree": "350 Images With Edit",
+    "descFour": "File Provided USB",
+    "descFive": " Free Extra Offerings",
+    "img": "https://i.ibb.co/wY1YbnS/wedding3.jpg"
+  }
 ]
