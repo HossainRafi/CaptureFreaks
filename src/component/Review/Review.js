@@ -18,7 +18,7 @@ const Review = ({ review }) => {
         <div className="px-5 py-2 text-lg pb-20">
           <p className="text-xl text-center my-2">{comment}</p>
           <div className="flex justify-center">
-            <h2 className="text-xl font-bold text-orange-400">Ratting:</h2>
+            <h2 className="text-xl font-bold text-gray-600">Ratting:</h2>
             <Rating
               className="pt-1 ml-3"
               readonly

@@ -41,17 +41,23 @@ const Header = () => {
           Blogs
         </NavLink>
 
-
-        {user?.uid ? <button onClick={()=>signOut(auth)}>Log Out</button> : <NavLink
-          to="/login"
-          className={({ isActive }) =>
-            isActive ? "text-blue-600" : "text-slate-600 hover:text-blue-600"
-          }
-        >
-          LogIn
-        </NavLink>}
-
-
+        {user?.uid ? (
+          <button
+            className="text-slate-600 hover:text-blue-600 text-xl font-bold"
+            onClick={() => signOut(auth)}
+          >
+            LogOut
+          </button>
+        ) : (
+          <NavLink
+            to="/login"
+            className={({ isActive }) =>
+              isActive ? "text-blue-600" : "text-slate-600 hover:text-blue-600"
+            }
+          >
+            LogIn
+          </NavLink>
+        )}
       </div>
     </div>
   );

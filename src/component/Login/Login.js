@@ -4,6 +4,7 @@ import "./login.css";
 import auth from "./../../Firebase/firebase.init";
 import {
   useAuthState,
+  useSendPasswordResetEmail,
   useSignInWithEmailAndPassword,
   useSignInWithGoogle,
 } from "react-firebase-hooks/auth";
@@ -17,10 +18,13 @@ const Login = () => {
   const from = location?.state?.from?.pathname || "/";
   const [errors, setErrors] = useState({ email: "", password: "", others: "" });
 
+
   const [signInWithEmail, user, loading, hookError] =
     useSignInWithEmailAndPassword(auth, { sendEmailVerification: true });
   const [signInWithGoogle, googleUser, googleLoading, googleError] =
     useSignInWithGoogle(auth);
+  const [sendPasswordResetEmail, sending, error] =
+    useSendPasswordResetEmail(auth);
 
   const handleEmailChange = (e) => {
     const emailRegex = /\S+@\S+\.\S+/;
@@ -72,6 +76,11 @@ const Login = () => {
   const handleGoogleLogin = () => {
     signInWithGoogle();
   };
+  const handleResetPass = () => {
+    sendPasswordResetEmail(userInfo.email)
+    toast("Mail Send")
+}
+
   return (
     <div className="bg-gray-200 py-10">
       <div className="login-container">
@@ -101,7 +110,7 @@ const Login = () => {
             Forget your password ?
           </p>
           <p className="font-bold text-xl text-center text-blue-900 cursor-pointer">
-            <p>Reset Password</p>
+            <p onClick={handleResetPass}>Reset Password</p>
           </p>
         </div>
 
