@@ -1,10 +1,10 @@
-## Capture Freaks Photography
+### Capture Freaks Photography
 
 ## https://assignment-10-8d187.web.app/
 
-# This is my projects [Live Site Link](https://assignment-10-8d187.web.app/)
+## This is my projects [Live Site Link](https://assignment-10-8d187.web.app/)
 
-# Features And Functionalities:
+### Features And Functionalities:
 - This is a single page application
 - User can create account in this website
 - After creating account, user can log in with his existing account
@@ -12,7 +12,7 @@
 - Google sign in included
 - If user forget his password, he/she can reset her/his password
 
-# List Of Technologies Used In This Website:
+### List Of Technologies Used In This Website:
 - React.js 
 - React Router
 - Create React App
