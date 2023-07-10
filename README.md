@@ -19,4 +19,3 @@
 - React Icon
 - React Ratting
 - Slick-Carousel
-
